@@ -10,7 +10,7 @@ import android.widget.Button;
 public class WebDeAutor extends AppCompatActivity {
     private Button btnGithub;
     private Button btnTelefono;
-    String repositorio="https://www.githugbasda";
+    String repositorio="https://www.github.com/matiasdr";
     String telefono="+542954390619";
 
     @Override

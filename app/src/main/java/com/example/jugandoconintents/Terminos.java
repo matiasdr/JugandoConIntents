@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class Terminos extends AppCompatActivity {
     private CheckBox checkBox;
@@ -39,6 +40,8 @@ public class Terminos extends AppCompatActivity {
             startActivity(intent);
             finish();
 
+        } else {
+            Toast.makeText(this, "Debe Aceptar los términos y condiciones", Toast.LENGTH_SHORT).show();
         }
     }
 
