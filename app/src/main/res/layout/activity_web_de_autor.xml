@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BBDEFB"
     tools:context=".WebDeAutor">
 
     <ImageView
@@ -16,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/calc" />
+        app:srcCompat="@drawable/rostro" />
 
     <TextView
         android:id="@+id/textView4"
@@ -51,7 +52,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
+        android:backgroundTint="#FF5722"
         android:text="@string/repositorio_de_github"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +65,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
+        android:backgroundTint="#FF5722"
         android:text="@string/telefono_personal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
