@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Registro extends AppCompatActivity {
@@ -13,12 +15,13 @@ public class Registro extends AppCompatActivity {
     private EditText ediTextUsuario;
     private EditText ediTextMail;
     private EditText ediTextPass;
+    private ImageButton btnAutor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-
+        btnAutor=findViewById(R.id.btnAutor);
         btnRegistrarse=findViewById(R.id.btnRegistrarse);
         ediTextMail=findViewById(R.id.editTextMail);
         ediTextPass=findViewById(R.id.editTextPass);
@@ -28,6 +31,13 @@ public class Registro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Registrarse();
+            }
+        });
+
+        btnAutor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                VerWeb();
             }
         });
     }
@@ -43,5 +53,10 @@ public class Registro extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+    }
+    void VerWeb(){
+        Intent i = new Intent(this, WebDeAutor.class);
+        startActivity(i);
+
     }
 }
